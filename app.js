@@ -21,5 +21,14 @@ angular.module('dot-red-3-main', ['ngRoute']).config(function($routeProvider) {
     controller: 'MainCtrl'
   });
 }).controller('MainCtrl', function($scope) {
-  return console.log($('section'));
+  var github, linkedin;
+  linkedin = {
+    href: 'https://www.linkedin.com/in/jefkahn',
+    icon_class: 'linkedin'
+  };
+  github = {
+    href: 'https://github.com/jefk',
+    icon_class: 'github'
+  };
+  return $scope.profiles = [linkedin, github];
 });
