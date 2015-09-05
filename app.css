@@ -81,13 +81,8 @@ body,
 .content {
   margin: 0 auto;
   max-width: 660px;
-  padding: 2rem;
-  min-height: 500px;
-}
-@media screen and (max-width: 350px) {
-  .content {
-    min-height: 400px;
-  }
+  padding: 2.5rem 2.5rem 4rem;
+  min-height: 80vh;
 }
 .content > * {
   margin-bottom: 1em;
@@ -96,7 +91,7 @@ body,
   margin-bottom: 0;
 }
 .content h3 {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.4em;
 }
 section {
   background: #f22727;
