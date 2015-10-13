@@ -1,4 +1,4 @@
-angular.module('dot-red-3', ['ngRoute', 'dot-red-3-main', 'templates']).config(function($routeProvider) {
+angular.module('dot-red-3', ['ngRoute', 'templates']).config(function($routeProvider) {
   return $routeProvider.otherwise({
     redirectTo: '/'
   });
@@ -6,6 +6,12 @@ angular.module('dot-red-3', ['ngRoute', 'dot-red-3-main', 'templates']).config(f
 
 'app controller goes here';
 
+
+angular.module('dot-red-3').config(function($routeProvider) {
+  return $routeProvider.when('/case-study', {
+    templateUrl: 'case_study/case_study.html'
+  });
+});
 
 angular.module('dot-red-3').directive('haxPageScroller', function() {
   console.log('here');
@@ -15,7 +21,7 @@ angular.module('dot-red-3').directive('haxPageScroller', function() {
 'common service goes here';
 
 
-angular.module('dot-red-3-main', ['ngRoute']).config(function($routeProvider) {
+angular.module('dot-red-3').config(function($routeProvider) {
   return $routeProvider.when('/', {
     templateUrl: 'main/main.html',
     controller: 'MainCtrl'
